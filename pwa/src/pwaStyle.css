@@ -1,0 +1,346 @@
+/* Primary Colour: 4999F9 Secondary Blue :90D1F7 Night time colour#2a2040 Paper Border, shadow on border between edge. Put high opacity. */
+/* ****resets**** */
+* {
+  padding: 0;
+  margin: 0;
+ box-sizing:border-box;
+}
+
+label {
+  display:block;
+}
+input{
+  width:100%;
+}
+.portrait{
+  align-self:center;
+  
+}
+.portrait img{
+  border-radius: 95%;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,.4);
+}
+/* 
+=== BLOG STYLINGS ===
+*/
+.blog{
+  margin:0 auto;
+  max-width:35em;
+  padding:12px;
+  align-self: center;
+}
+.blog__heading{
+  margin:0 auto;
+  max-width:45em;
+  padding:20px;
+  line-height:1.8em;
+  font-size:1.25em;
+  font-family: 'Roboto Mono', monospace;
+ /*guardians FONT */
+  padding:20px 0 20px;
+}
+.blog__para{
+ padding:8px;
+ margin:10px 0px 20px 0px;
+ width:100%;
+}
+
+
+.blog__citation{
+ word-wrap: break-word;
+font-style: italic;
+max-width: 400px;
+}
+
+/* === hover transitions  ===*/
+.nav__item--hover:hover{
+  background-color: #4999F9;
+  text-decoration: none;
+  color: white;
+}
+.container__content--link a:link{
+  color: black;
+  text-decoration: none;
+}
+.container__content--link a:active{
+  color: black;
+  text-decoration: none;
+}
+.container__content--link a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+.span__para--hover:hover{
+  color:black;
+  background-color:#90D1F7;
+}
+
+
+.footer{
+  color:black;
+  text-decoration:none;
+  align-self:center;
+  padding:4px;
+}
+
+.nav__item a{
+  color:black;
+}
+/*
+* — Button styling —
+*/
+.header__svg--toggle {
+  width:40px;
+  height:40px;
+}
+
+/* For pulse animation http://www.tipue.com/blog/css-pulse-buttons/ */
+.header__svg--toggle:hover{
+ 
+      animation: shadow-pulse 2s infinite;
+      border-radius: 60%;
+      cursor:pointer;
+ }
+
+@keyframes shadow-pulse
+{
+  0% {
+       box-shadow: 0 0 0 0px rgba(135,206,250);
+  }
+  100% {
+       box-shadow: 0 0 0 35px rgba(135,206,250);
+  }
+}
+
+.nav__item{
+  padding:6px;
+  letter-spacing:0.8px;
+  border-right:solid 1px black;
+  list-style: none;
+  display: inline-flex;
+}
+
+
+/*
+=== Main stylings ===
+*****************************
+*/
+
+.nav{
+  display:flex;
+  flex-direction: row ;
+  flex-wrap:wrap;
+  width:100%;
+  align-self:center;
+}
+.header{
+  min-height:100px;
+  display:flex;
+  flex-direction: column ;
+  flex-wrap: wrap;
+  width:100%;
+}
+
+/*For lcass switching with javascript..*/
+
+/* not applied BEM to it cuz im scared*/
+.main-header-border-1{
+  border-bottom:solid 1px black;
+}
+.main-header-border-2{
+  border-bottom:solid 1px white;
+}
+
+
+.header__heading {
+  font-weight: 100;
+  letter-spacing:1px;
+  font-size:18px;
+  padding:6px;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+/*Positions text below heading in flexbox */
+.container__para {
+  padding:8px;
+  margin:50px 0px 80px 0px;
+  width:100%;
+
+  
+}
+.span__para{
+  margin-left:12px;
+}
+.container__h2{
+  padding:2px;
+  font-weight: 100;
+  margin-bottom:20px;
+}
+.container__inner{
+  display:flex;
+  flex:1;
+  max-width:1250px;
+  width:100%;
+  background-color:white;
+  position:relative;
+  box-shadow:0 2px 8px 0 rgba(0,0,0,.4);
+  justify-content: center;
+  align-items: center;
+}
+/* relative used to absolutely position button */
+.table {
+  display:flex;
+  padding:6px;
+  flex-direction:column;
+}
+.cv{
+margin-top: 12px;
+margin-bottom: 12px;
+
+}
+
+.table__heading{
+  font-weight:100;
+  padding-right:7px;
+}
+.container__content{
+  background:white;
+  display:flex;
+  flex-flow:column wrap;
+  margin:0;
+  font-family: 'Karma', serif;
+  padding:12px;
+  align-content: center;
+  max-width: 800px;
+}
+
+.container{
+  display:flex;
+  flex-flow:column;
+  flex:1;
+  background-image:linear-gradient(60deg,#4999F9 0, #90D1F7);
+  width:100%;
+  align-items:center;
+  justify-content: center;
+}
+
+/*
+* — Used for alternative styling —
+*/
+
+.dark-text a:visited{
+  color:#FEFAF7 
+}
+.dark-text a:link{ 
+ color:#FEFAF7 !important; 
+
+}
+.dark-two{
+  color:#FEFAF7;
+  background-color:#142A44 !important;
+}
+.dark-two a:link{
+ color: #FEFAF7;;
+ text-decoration: none;
+ background-color: #4999F9;
+}
+.content-container a:active{
+ color:#FEFAF7;
+ text-decoration: none;
+ background-color: #4999F9;
+
+}
+.dark-two a:visited{
+ color: rgb(207, 205, 205);
+ text-decoration: none;
+}
+/*Positions text below heading in flexbox */
+
+.dark-mode{
+  background-color:#142A44;
+}
+
+/*Media Queries */
+@media only screen and (min-width:900px){
+  .header__svg--toggle {
+      position: absolute;
+      top:0;
+      left:0;
+      text-decoration: none;
+      z-index: 100;
+ }
+}
+@media only screen and (min-width:900px){
+  .nav{
+      align-self:flex-end;
+      width:auto;
+ }
+  .flexItem{
+      width:80%;
+ }
+  .left-para-2{
+      position:relative;
+      top:30px;
+ }
+  .cv-para-2{
+      position:relative;
+      top:17px;
+ }
+  .container__content{
+      min-height:1000px;
+ }
+  .container__inner{
+      margin-top:20px;
+      margin-bottom:20px;
+      max-width:900px;
+      width: calc(100% - 120px);
+ }
+  .table {
+      flex-direction:row;
+      align-items:baseline;
+      justify-content: space-between;
+      margin-bottom:120px;
+      padding: 0px 0px 50px 10px;
+      border-top:1px solid black;
+ }
+
+  .table__heading{
+      position:relative;
+      top:15px;
+ }
+  .span{
+      position:relative;
+      top:15px;
+      padding:10px;
+      background-color:#E9EBEE 
+ }
+  .container__h2{
+      align-self:center;
+      padding-bottom:20px;
+ }
+  .span{
+      width:500px;
+      max-width:400px;
+ }
+
+  .header{
+      margin-bottom:30px;
+ }
+  .header__heading{
+      margin-top:20px;
+      padding-top:30px;
+      align-self: center
+ }
+}
+@media only screen and (min-width:1220px){
+  .inner-container{
+      margin-top:40px;
+      margin-bottom:40px;
+      max-width:1400px;
+      width: calc(100% - 100px);
+ }
+  .container__para{
+      font-size:1.25em ;
+ }
+}
