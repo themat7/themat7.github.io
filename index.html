@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang= "en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Hey, Frazer Watson here, Manchester based Web developer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="http://www.16027044.webdevmmu.uk/index.html">
+<title> Frazer Watson Portfolio </title>
+<link rel="stylesheet" type="text/css" href="pwaStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+
+<link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div id="outerContainer" class="container">
+
+<main  id="inner" class= "container__inner"> 
+
+<div id="content" class="container__content container__content--link">
+
+<header id = "header" class="header">
+
+    <svg id="toggle" class ="header__svg--toggle">
+ <circle cx="20" cy="20" r="15" stroke="blue" stroke-width="1" fill="blue"></circle></svg>
+            <nav id ="nav" class="nav">
+							<ul>
+                                <li class="nav__item nav__item--hover" > <a href="about.html" >About </a></li>
+                                
+                                <li class="nav__item nav__item--hover" > <a href="cv.html" >CV</a></li>
+								
+																 <li class="nav__item nav__item--hover" > <a href="contact.php" >Contact</a></li>
+																</ul>
+                                 </nav>
+
+<h1  class="header__heading "> Frazer Watson. Web Developer based in Manchester.
+  Currently finishing a degree in Web Development at MMU. </h1>
+</header>
+
+
+		
+		<h2 class="container__h2">My Blog posts </h2>
+		 		<div class="table">
+
+		<div class="table__span">
+		<h3 class="table__heading">Industry Thoughts </h3>
+ </div>
+<div class ="span">
+ <p class="span__para span__para--hover"><a href="blog1.html">My Perspective </a></p> 
+</div>
+
+ </div>
+ 		<div class="table">
+
+		<div class="table__span">
+		<h3 class="table__heading">Design Process </h3>
+ </div>
+ <div class ="span">
+ <p class="span__para span__para--hover"><a href="blog2.html"> Explanation of my development process.</a> </p>
+
+</div>
+ </div>
+  		<div class="table">
+
+ 		<div class="table__span">
+		<h3 class="table__heading">SEO and optimization</h3>
+ </div>
+ <div class ="span">
+
+ <p class="span__para span__para--hover"> <a href="blog3.html">Discussion of my SEO integration and site optimization </a></p>
+
+</div>
+
+
+
+</div>
+
+
+<h2 class="container__h2"> My projects</h2>
+<div class="table">
+
+ 		<div class="table__span">
+		<h3 class="table__heading">Javascript</h3>
+ </div>
+ <div class ="span">
+
+ <p class="span__para span__para--hover"> <a href="https://github.com/themat7/Basic-projects-collection/blob/master/bubble%20sort/bubblesort2.html">  simple binary converter </a></p>
+<p class="span__para span__para--hover"> <a href ="http://www.16027044.webdevmmu.uk/bubblesort.html"> bubble sort </a></p>
+
+</div>
+
+
+
+</div>
+
+
+<footer  class="footer">
+	<span > <a id="footer" href="#top">© 2018 Back To Top</a></span>
+	</footer>
+
+
+
+</div>
+
+
+
+</main>
+
+</div>
+<script type="text/javascript" src="colourSwap.js"> </script>
+
+      // Initialize Firebase
+     
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA8FTo8X_lfBHABpeHGLplzceSTZW7NGkU",
+    authDomain: "my-project-11b44.firebaseapp.com",
+    databaseURL: "https://my-project-11b44.firebaseio.com",
+    projectId: "my-project-11b44",
+    storageBucket: "my-project-11b44.appspot.com",
+    messagingSenderId: "153477229764"
+  };
+  firebase.initializeApp(config);
+</script>
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
+
+
+<script>
+  const messaging = firebase.messaging();
+  messaging.requestPermission()
+  .then(function() {
+    console.log('Notification permission granted.');
+    return messaging.getToken();
+  })
+  .then(function(token) {
+    console.log(token);
+  })
+  .catch(function(err) {
+    console.log('Unable to get permission to notify.', err);
+  })
+</script>
+
+  
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
+  
+  </body>
+</html>
